@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walima Invitation</title>
+<meta property="og:title" content="Walima Invitation — Hamza Shakeel & Syeda Ansharah Shoaib"/>
+<meta property="og:description" content="You are invited to the Walima. Monday, 16th November 2026 · Al-Zubair Banquet, Karachi"/>
+<meta property="og:image" content="https://syedaansharahshoaib.github.io/Walima/assets/preview.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://syedaansharahshoaib.github.io/Walima/assets/preview.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Italiana&family=Allura&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<canvas id="sparkle" aria-hidden="true"></canvas>
+<div class="orbs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<!-- SHARED ENVELOPE INTRO -->
+<section id="intro" class="invitation-intro" aria-label="Walima invitation cover">
+  <div class="intro-aura" aria-hidden="true"></div>
+  <div class="intro-flowers flower-left" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+  <div class="intro-flowers flower-right" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+  <button class="envelope" id="envelope" type="button" aria-label="Open Walima invitation">
+    <span class="env-back"></span>
+    <span class="env-letter">
+      <small>You are invited to the</small>
+      <strong>Walima</strong>
+      <em><span id="intro-g">G</span> &amp; <span id="intro-b">B</span></em>
+    </span>
+    <span class="env-front"></span>
+    <span class="env-flap"></span>
+    <span class="env-ribbon ribbon-horizontal" aria-hidden="true"></span>
+    <span class="ribbon-bow" aria-hidden="true"><svg viewBox="0 0 240 132"><path class="ribbon-svg-tail ribbon-svg-tail-left" d="M112 62 C94 72 81 96 69 128 L99 114 L116 72 Z"></path><path class="ribbon-svg-tail ribbon-svg-tail-right" d="M128 62 C146 72 159 96 171 128 L141 114 L124 72 Z"></path><path class="ribbon-svg-loop ribbon-svg-loop-left" d="M119 59 C96 24 48 9 20 29 C-2 45 16 77 49 80 C75 82 98 71 119 62 Z"></path><path class="ribbon-svg-loop ribbon-svg-loop-right" d="M121 59 C144 24 192 9 220 29 C242 45 224 77 191 80 C165 82 142 71 121 62 Z"></path><path class="ribbon-svg-fold ribbon-svg-fold-left" d="M112 58 C86 49 58 43 29 47 C52 58 77 65 106 64"></path><path class="ribbon-svg-fold ribbon-svg-fold-right" d="M128 58 C154 49 182 43 211 47 C188 58 163 65 134 64"></path><ellipse class="ribbon-svg-knot" cx="120" cy="61" rx="24" ry="19"></ellipse></svg></span>
+    <span class="env-seal" aria-hidden="true"><span class="seal-mark">W</span><span class="seal-caption">Walima</span></span>
+  </button>
+  <p class="intro-label">A wedding invitation</p>
+  <p class="tap-hint">Tap to untie &amp; open</p>
+</section>
+
+<main id="card" class="hidden">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="frame">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <div class="chandelier" aria-hidden="true">
+        <svg viewBox="0 0 120 150">
+          <line x1="60" y1="0" x2="60" y2="30"/>
+          <path d="M60 30 q-45 5 -48 40 M60 30 q45 5 48 40 M60 30 q-22 8 -24 40 M60 30 q22 8 24 40"/>
+          <circle cx="12" cy="74" r="5"/><circle cx="36" cy="74" r="5"/><circle cx="84" cy="74" r="5"/><circle cx="108" cy="74" r="5"/>
+          <path class="drip" d="M12 80v18M36 80v34M84 80v34M108 80v18M60 30v100"/>
+          <circle cx="60" cy="136" r="7"/><circle cx="12" cy="104" r="3"/><circle cx="36" cy="120" r="3"/><circle cx="84" cy="120" r="3"/><circle cx="108" cy="104" r="3"/>
+        </svg>
+      </div>
+
+      <p class="arabic reveal">بسم الله الرحمن الرحيم</p>
+      <p class="eyebrow reveal">With gratitude to Allah, we invite you to the</p>
+      <h1 class="occasion reveal">Walima</h1>
+      <p class="eyebrow reveal">Reception of</p>
+      <h2 class="names reveal">
+        <span class="allura gold" id="n-groom"></span>
+        <span class="amp">&amp;</span>
+        <span class="allura silver" id="n-bride"></span>
+      </h2>
+      <div class="rule reveal"><i></i><b></b><i></i></div>
+      <p class="date reveal" id="date-line"></p>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- CINEMATIC RECEPTION IMAGE -->
+  <figure class="cinematic reveal">
+    <img src="assets/celebration.webp" alt="An elegant gold and pastel Walima reception with chandeliers, candles and a floral aisle" loading="lazy" decoding="async">
+    <figcaption><span>An evening of gratitude</span><strong>Celebrate love in all its grace</strong></figcaption>
+  </figure>
+
+  <div class="floral-interlude reveal" aria-hidden="true"><img src="assets/floral-spray.webp" alt="" loading="lazy" decoding="async"></div>
+
+  <!-- DUA -->
+  <section class="dua reveal">
+    <div class="lotus" aria-hidden="true">
+      <svg viewBox="0 0 120 70">
+        <path d="M60 66C46 52 46 24 60 6c14 18 14 46 0 60z"/>
+        <path d="M60 66C38 62 22 44 20 22c24 2 40 20 40 44z"/>
+        <path d="M60 66c22-4 38-22 40-44-24 2-40 20-40 44z"/>
+        <path d="M60 66C30 70 8 56 2 36c26-2 48 8 58 30z" opacity=".7"/>
+        <path d="M60 66c30 4 52-10 58-30-26-2-48 8-58 30z" opacity=".7"/>
+      </svg>
+    </div>
+    <p>May Allah bless you both and bless for you, and unite you both in goodness.</p>
+    <span class="cite">Dua for the Newlyweds</span>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details">
+    <h3 class="title reveal"><span class="allura">The Celebration</span></h3>
+    <div class="grid">
+      <article class="tile reveal gold">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h4>Date</h4><p id="d-date"></p>
+      </article>
+      <article class="tile reveal silver">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h4>Time</h4><p id="d-time"></p>
+      </article>
+      <article class="tile reveal pastel">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <h4>Venue</h4><p id="d-venue"></p><small id="d-address"></small>
+      </article>
+    </div>
+    <a id="map-wrap" class="map-wrap reveal" target="_blank" rel="noopener" aria-label="Open venue in Google Maps">
+      <iframe id="map-frame" class="map-frame" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Venue location map" tabindex="-1"></iframe>
+      <span class="map-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Open in Google Maps</span>
+    </a>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="schedule">
+    <h3 class="title reveal"><span class="allura">Evening Programme</span></h3>
+    <div class="flow" id="flow"></div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="count reveal">
+    <h3 class="title"><span class="allura">Until we celebrate</span></h3>
+    <div class="timer">
+      <div><b id="c-d">00</b><span>Days</span></div>
+      <div><b id="c-h">00</b><span>Hours</span></div>
+      <div><b id="c-m">00</b><span>Minutes</span></div>
+      <div><b id="c-s">00</b><span>Seconds</span></div>
+    </div>
+  </section>
+
+  <!-- HOSTS -->
+  <section class="hosts reveal">
+    <p class="eyebrow">Hosted by</p>
+    <p class="host-names" id="hosts"></p>
+    <div class="rule"><i></i><b></b><i></i></div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp reveal">
+    <p class="allura big">We would love to see you</p>
+    <p class="note" id="rsvp-note"></p>
+  </section>
+
+  <footer>
+    <img class="floral-footer" src="assets/floral-spray.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+    <svg class="moon small" viewBox="0 0 100 100" aria-hidden="true"><path d="M62 10a40 40 0 1 0 0 80a32 32 0 1 1 0-80z"/></svg>
+    <p class="allura" id="foot-names"></p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
