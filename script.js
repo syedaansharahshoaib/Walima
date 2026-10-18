@@ -42,7 +42,6 @@ $("d-address").textContent = INVITE.address;
   wrap.href = INVITE.mapLink;
 })();
 $("hosts").textContent = INVITE.hosts;
-$("rsvp-note").textContent = INVITE.rsvpNote;
 $("foot-names").textContent = `${INVITE.groom} & ${INVITE.bride}`;
 $("flow").innerHTML = INVITE.schedule
   .map(e => `<div class="step"><time>${e.t}</time><h5>${e.h}</h5><p>${e.p}</p></div>`).join("");
